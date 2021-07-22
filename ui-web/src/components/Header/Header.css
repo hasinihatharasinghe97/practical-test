@@ -5,3 +5,8 @@ background-color: Blue;
 #tit{
 color: white;
 }
+
+.login-signup-btns{
+    margin-top: -5%;
+    margin-left: 85%;
+}

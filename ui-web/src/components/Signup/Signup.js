@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import {PostData} from '../../services/PostData';
 import {Redirect} from 'react-router-dom';
+import "../Signup/Signup.css"
 class Signup extends Component {
 constructor(props){
 super(props);
@@ -36,16 +37,21 @@ render() {
 if (this.state.redirectToReferrer || sessionStorage.getItem('userData')) {
 return (<Redirect to={'/home'}/>)
 }
+
+
 return (
-<div className="row " id="sBody">
+<div className="signup-body">
 <div className="medium-5 columns left">
-<h4>Signup</h4>
-<input type="text" name="email" placeholder="Email" onChange={this.onChange}/>
-<input type="text" name="name" placeholder="Name" onChange={this.onChange}/>
-<input type="text" name="username" placeholder="Username" onChange={this.onChange}/>
-<input type="password" name="password" placeholder="Password" onChange={this.onChange}/>
+<center><h3><b>Signup</b></h3>
+<input type="text" name="email" placeholder="Enter Your Email" onChange={this.onChange}/>
+<input type="text" name="name" placeholder="Enter Your Name" onChange={this.onChange}/>
+<input type="text" name="username" placeholder="Enter Your Username" onChange={this.onChange}/>
+<input type="password" name="password" placeholder="Enter Your Password" onChange={this.onChange}/>
 <input type="submit" className="button" value="Sign Up" onClick={this.signup}/>
-<a href="/login">Login</a>
+
+<p>Already have an account?</p>
+<a href="/login">Login Here</a>
+</center>
 </div>
 </div>
 );

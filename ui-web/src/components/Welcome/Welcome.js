@@ -5,9 +5,8 @@ render() {
 return (
 <div className="row " id="Body">
 <div className="medium-12 columns">
-<h2 id="welcomeText">PHP, MySQL and ReactJS Authentication App</h2>
-<a href="/login" className="button">Login</a>
-<a href="/signup" className="button success">Signup</a>
+<center><h2 id="welcomeText">WELCOME TO WEB WONDERS!</h2></center>
+
 </div>
 </div>
 );
